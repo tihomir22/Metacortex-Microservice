@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class PrecioActivo {
     //compuesto por dos activos
     @Id
-    @JsonIgnore
     private String id;
     private double precio;
     @JsonIgnore
