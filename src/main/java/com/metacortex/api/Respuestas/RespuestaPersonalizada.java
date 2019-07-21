@@ -1,12 +1,12 @@
 package com.metacortex.api.Respuestas;
 
-import com.metacortex.api.entidades.PrecioActivo;
+import com.metacortex.api.entidades.AssetPrice;
 
 public class RespuestaPersonalizada extends RespuestaBase {
 
-    private PrecioActivo data;
+    private AssetPrice data;
 
-    public RespuestaPersonalizada(int estado, String mensaje, PrecioActivo data) {
+    public RespuestaPersonalizada(int estado, String mensaje, AssetPrice data) {
         super(estado, mensaje);
         this.data = data;
     }
@@ -18,15 +18,15 @@ public class RespuestaPersonalizada extends RespuestaBase {
     public RespuestaPersonalizada() {
     }
 
-    public RespuestaPersonalizada(PrecioActivo data) {
+    public RespuestaPersonalizada(AssetPrice data) {
         this.data = data;
     }
 
-    public PrecioActivo getData() {
+    public AssetPrice getData() {
         return data;
     }
 
-    public void setData(PrecioActivo data) {
+    public void setData(AssetPrice data) {
         this.data = data;
     }
 

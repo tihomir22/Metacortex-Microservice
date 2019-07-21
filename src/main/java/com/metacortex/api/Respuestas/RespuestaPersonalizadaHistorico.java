@@ -1,17 +1,17 @@
 package com.metacortex.api.Respuestas;
 
-import com.metacortex.api.entidades.TipoDatoHistorico;
+import com.metacortex.api.entidades.HistoricDataWrapper;
 
 public class RespuestaPersonalizadaHistorico extends RespuestaBase{
 
-    private TipoDatoHistorico data;
+    private HistoricDataWrapper data;
 
-    public RespuestaPersonalizadaHistorico(int estado, String mensaje, TipoDatoHistorico data) {
+    public RespuestaPersonalizadaHistorico(int estado, String mensaje, HistoricDataWrapper data) {
         super(estado, mensaje);
         this.data = data;
     }
 
-    public RespuestaPersonalizadaHistorico(TipoDatoHistorico data) {
+    public RespuestaPersonalizadaHistorico(HistoricDataWrapper data) {
         this.data = data;
     }
 
@@ -22,11 +22,11 @@ public class RespuestaPersonalizadaHistorico extends RespuestaBase{
     public RespuestaPersonalizadaHistorico() {
     }
 
-    public TipoDatoHistorico getData() {
+    public HistoricDataWrapper getData() {
         return data;
     }
 
-    public void setData(TipoDatoHistorico data) {
+    public void setData(HistoricDataWrapper data) {
         this.data = data;
     }
 
