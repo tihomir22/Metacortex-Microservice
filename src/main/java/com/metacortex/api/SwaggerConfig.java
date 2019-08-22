@@ -12,21 +12,25 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import java.util.Collections;
+
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .protocols(Collections.singleton("https"))
+                .host("metacortex.herokuapp.com")
                 .select()
                 .apis(Predicates.not(RequestHandlerSelectors.basePackage("org.springframework.boot")))
                 .paths(PathSelectors.any())
-
                 .build().apiInfo(apiEndPointsInfo());
     }
 
     private ApiInfo apiEndPointsInfo() {
-        return new ApiInfoBuilder().title("Metacortex API")
+        return new ApiInfoBuilder()
+                .title("Metacortex API")
                 .description("Live data , historic records and technical indicators for the crypto industry.")
                 .contact(new Contact("Tihomir Stoychev Stoychev", "http://github.com/tihomir22/", "tihomir_alcudia3@hotmail.com"))
                 .license("Apache 2.0")

@@ -11,15 +11,15 @@ public class RespuestaPersonalizada extends RespuestaBase {
         this.data = data;
     }
 
+    public RespuestaPersonalizada(AssetPrice data) {
+        this.data = data;
+    }
+
     public RespuestaPersonalizada(int estado, String mensaje) {
         super(estado, mensaje);
     }
 
     public RespuestaPersonalizada() {
-    }
-
-    public RespuestaPersonalizada(AssetPrice data) {
-        this.data = data;
     }
 
     public AssetPrice getData() {

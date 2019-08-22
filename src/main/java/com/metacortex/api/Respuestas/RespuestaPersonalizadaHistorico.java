@@ -15,11 +15,11 @@ public class RespuestaPersonalizadaHistorico extends RespuestaBase{
         this.data = data;
     }
 
-    public RespuestaPersonalizadaHistorico(int estado, String mensaje) {
-        super(estado, mensaje);
+    public RespuestaPersonalizadaHistorico() {
     }
 
-    public RespuestaPersonalizadaHistorico() {
+    public RespuestaPersonalizadaHistorico(int estado, String mensaje) {
+        super(estado, mensaje);
     }
 
     public HistoricDataWrapper getData() {
