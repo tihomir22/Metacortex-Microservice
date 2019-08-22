@@ -1,6 +1,6 @@
 package com.metacortex.api.controladores;
 
-import com.metacortex.api.Validaciones.MetacortexStaticLibrary.StaticTools;
+import com.metacortex.api.Validaciones.StaticTools;
 import com.metacortex.api.entidades.TechnicalRegistry;
 import com.metacortex.api.repositorio.RepositorioActivos;
 import io.swagger.annotations.*;
