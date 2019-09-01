@@ -13,6 +13,9 @@ public class ValidacionesEstaticas {
     public static String intervaloHistorico = "historicInterval";
     public static String intervaloPeriodoIndicador = "indicatorInterval";
     public static String tipoSeriesIndicador = "seriesType";
+    public static String HistoricStartTime="startTime";
+    public static String HistoricEndTime="endTime";
+    public static String HistoricLimit="limit";
     public static String fastKPeriod = "fKperiod";
     public static String slowKPeriod = "sKperiod";
     public static String KMAType = "kMaType";

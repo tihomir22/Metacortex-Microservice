@@ -14,7 +14,7 @@ import java.util.Map;
 @RestController
 @RequestMapping(path = "/technical/volatility")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
-@Api(value = "Oscillators Controller", tags = { "Oscillators" })
+@Api(value = "Volatility Controller", tags = { "Volatility" })
 public class VolatilityController {
 
     @Autowired
